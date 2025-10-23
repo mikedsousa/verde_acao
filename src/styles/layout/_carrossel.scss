@@ -1,0 +1,12 @@
+.carrossel {
+  margin: 120px auto;
+  width: 100%;
+  max-width: 1440px;
+  .swiper-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+

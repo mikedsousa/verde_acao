@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Folha de estilos -->
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+
+    <title>Ação Verde</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Verde Ação</h1>
+      <p class="cabecalho__texto">
+        Ser voluntário na Verde Ação é plantar esperança e colher transformação.
+        Juntos, cuidamos do planeta e inspiramos mudanças reais!
+      </p>
+      <button class="cabecalho__botao botao">Quero ser voluntário</button>
+    </header>
+    <main>
+      <section class="carrossel">
+        <!-- Container do Swiper-->
+        <div class="swiper">
+          <!-- Agrupador adicional -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide carrossel__card">
+              <img src="/girassois.png" alt="" />
+              <div class="carrossel__card-container">
+                <h2 class="carrossel__card-titulo">Plantio de mudas</h2>
+                <p class="carrossel__card-texto">
+                  Cada muda plantada ajuda a restaurar o meio ambiente
+                </p>
+                <button class="carrossel__card-botao botao">Ver mais</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide carrossel__card">
+              <img src="/download.png" alt="" />
+              <div class="carrossel__card-container">
+                <h2 class="carrossel__card-titulo">Educação Ambiental</h2>
+                <p class="carrossel__card-texto">
+                  Promove oficinas e rodas de conversas
+                </p>
+                <button class="carrossel__card-botao botao">Ver mais</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide carrossel__card">
+              <img src="/artigo.png" alt="" />
+              <div class="carrossel__card-container">
+                <h2 class="carrossel__card-titulo">Cuidados</h2>
+                <p class="carrossel__card-texto">
+                  Ajude a manter areas preservadas
+                </p>
+                <button class="carrossel__card-botao botao">Ver mais</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide carrossel__card">
+              <img src="/floresta.png" alt="" />
+              <div class="carrossel__card-container">
+                <h2 class="carrossel__card-titulo">Mapeamento</h2>
+                <p class="carrossel__card-texto">
+                  Indentifique areas que precisam de mapeamento
+                </p>
+                <button class="carrossel__card-botao botao">Ver mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <form class="formulario">
+        <div class="formulario__container">
+          <h2 class="formulario__titulo">Cadastre-se como voluntário</h2>
+          <span class="formulario__span"
+            >Faça parte de ações que transformam o mundo. Com pequenas atitudes,
+            você pode gerar grandes impactos na natureza e na comunidade</span
+          >
+          <input
+            class="formulario__input"
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome"
+          />
+          <input
+            class="formulario__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+          <input
+            class="formulario__input"
+            type="text"
+            name="cidade"
+            id="cidade"
+            placeholder="Cidade"
+          />
+          <select class="formulario__input" name="atividade" id="atividade">
+            <option value="Selecione atividade" disabled>
+              Selecione atividade
+            </option>
+          </select>
+          <button class="formulario__botao botao">Cadastrar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="rodape">
+      <p>© todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

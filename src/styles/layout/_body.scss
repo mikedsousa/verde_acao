@@ -1,0 +1,6 @@
+@use "../abstract/variables";
+
+body {
+  background-color: variables.$verde-carrossel;
+  font-family: "Roboto", sans-serif;
+}
